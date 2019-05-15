@@ -90,10 +90,10 @@
 <div class="col-md-6">
 <span><textarea placeholder="Question" name="question"  required></textarea></span>
 
-
+<div class="g-recaptcha" data-sitekey="6LcAqaMUAAAAAHOpd32PhD96cdofS_N3NEBS3kCk"></div>	
 
 <span class="form-submit"><input name="send_btn" type="submit"  class="submit" value="Send message"></span></div>
-<div class="g-recaptcha" data-sitekey="6LcAqaMUAAAAAHOpd32PhD96cdofS_N3NEBS3kCk"></div>					
+				
 </form>
 					</div>
 				</div>
