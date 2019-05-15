@@ -1,3 +1,4 @@
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 <div class="flat-row pad-bottom30px">
 	
 <div class="flat-row parallax parallax3">
@@ -77,7 +78,7 @@
 			<div class="col-md-12">
 				<div id="contactform">
 					<div class="row">
-						<form id="form" action="">
+						<form id="form" action="" >
 						<div class="col-md-6">
 <span><input placeholder="Your name" type="text" maxlength="35" name="name"  required></span>
 <span><input placeholder="Your position" type="text" maxlength="35" name="position"  required></span>			
@@ -88,8 +89,12 @@
 								</div>
 <div class="col-md-6">
 <span><textarea placeholder="Question" name="question"  required></textarea></span>
+
+
+
 <span class="form-submit"><input name="send_btn" type="submit"  class="submit" value="Send message"></span></div>
-					</form>
+<div class="g-recaptcha" data-sitekey="== Your site Key =="></div>					
+</form>
 					</div>
 				</div>
 			</div>
