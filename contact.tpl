@@ -1,4 +1,4 @@
-<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
 <div class="flat-row pad-bottom30px">
 	
 <div class="flat-row parallax parallax3">
@@ -79,6 +79,12 @@
 				<div id="contactform">
 					<div class="row">
 						<form id="form" action="" >
+<!-- Hidden Required Fields -->
+<input type="hidden" name="project_name" value="deftech-ltd.com">
+<input type="hidden" name="admin_email" value="info@deftech-ltd.com">
+<input type="hidden" name="form_subject" value="Заявка с сайта">
+<!-- END Hidden Required Fields -->
+
 						<div class="col-md-6">
 <span><input placeholder="Your name" type="text" maxlength="35" name="name"  required></span>
 <span><input placeholder="Your position" type="text" maxlength="35" name="position"  required></span>			
@@ -90,9 +96,9 @@
 <div class="col-md-6">
 <span><textarea placeholder="Question" name="question"  required></textarea></span>
 
-<div class="g-recaptcha" data-sitekey="6LcAqaMUAAAAAHOpd32PhD96cdofS_N3NEBS3kCk"></div>	
+<div class="g-recaptcha" data-sitekey="6LcAqaMUAAAAAHOpd32PhD96cdofS_N3NEBS3kCk" data-callback="correctCaptcha"></div>	
 
-<span class="form-submit"><input name="send_btn" type="submit"  class="submit" value="Send message"></span></div>
+<span id="submit_btn_cont" class="form-submit"></span></div>
 				
 </form>
 					</div>
